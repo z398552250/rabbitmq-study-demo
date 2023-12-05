@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.limeng</groupId>
+    <artifactId>rabbitmq</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>rabbitmq-01-fanout</module>
+        <module>rabbitmq-02-receive</module>
+        <module>rabbitmq-03-direct</module>
+        <module>rabbitmq-04-topic</module>
+        <module>rabbitmq-05-headers</module>
+        <module>rabbitmq-06-ttl</module>
+        <module>rabbitmq-07-dlx1</module>
+        <module>rabbitmq-08-dlx2</module>
+        <module>rabbitmq-09-dlx3</module>
+        <module>rabbitmq-10-dlx3-receive</module>
+        <module>rabbitmq-11-dlx3-receive2</module>
+        <module>rabbitmq-12-dlx4</module>
+        <module>rabbitmq-13-delayed1</module>
+        <module>rabbitmq-14-delayed2</module>
+        <module>rabbitmq-15-confirm</module>
+        <module>rabbitmq-16-returns</module>
+        <module>rabbitmq-17-exchange-properties</module>
+        <module>rabbitmq-18-queue-properties</module>
+        <module>rabbitmq-19-reliability</module>
+        <module>rabbitmq-20-reliability-receive</module>
+        <module>rabbitmq-21-idempotent-receive</module>
+        <module>rabbitmq-22-cluster</module>
+        <module>rabbitmq-23-cluster-receive</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.13</version>
+    </parent>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: dlx4
+  rabbitmq:
+    host: 192.168.47.128
+    username: admin
+    password: 123456
+    virtual-host: powernode

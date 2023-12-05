@@ -1,0 +1,13 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: dlx3-receive2
+  rabbitmq:
+    host: 192.168.47.128
+    username: admin
+    password: 123456
+    virtual-host: powernode
+    listener:
+      simple:
+        acknowledge-mode: manual

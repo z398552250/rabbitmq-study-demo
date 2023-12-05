@@ -1,0 +1,10 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: cluster-receive
+  rabbitmq:
+    addresses: 192.168.47.129:5672,192.168.47.130:5672,192.168.47.131:5672
+    username: admin
+    password: 123456
+    virtual-host: limeng

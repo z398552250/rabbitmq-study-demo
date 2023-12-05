@@ -1,0 +1,17 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: reliability-receive
+  rabbitmq:
+    host: 192.168.47.128
+    username: admin
+    password: 123456
+    virtual-host: powernode
+    listener:
+      simple:
+        #开启消费者手动确认
+        acknowledge-mode: manual
+  redis:
+    database: 0
+    host: 192.168.0.106
